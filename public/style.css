@@ -90,4 +90,6 @@ body {
   background-color: rgb(100, 100, 100) !important ;
   color: whitesmoke ;
   cursor: not-allowed;
+  border: none !important;
+  box-shadow: none !important;
 }
