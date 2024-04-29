@@ -11,11 +11,12 @@ body {
   font-size: 2rem;
   height: 5rem;
   width: 10rem;
+  cursor: pointer;
 }
 #activateBtn:hover {
   background-color: #000000;
   color: white;
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.50);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
 }
 .content {
   display: flex;
@@ -44,21 +45,43 @@ body {
 .green {
   background-color: #3ad100;
 }
-.green:hover{
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .50);
+.green:hover {
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 .red {
   background-color: #f70505;
 }
-.red:hover{
-    border: 1px solid black;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.50);
+.red:hover {
+  border: 1px solid black;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 .yellow {
-  background-color: #ffee03;
+  background-color: #eee01e;
 }
-.yellow:hover{
-    border: 1px solid black;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.50);
+.yellow:hover {
+  border: 1px solid black;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+.doc {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(223, 218, 218);
+  border-radius: 1rem;
+  transition-duration: 0.4s;
+  height: 5rem;
+  width: 15rem;
+  cursor: pointer;
+  background-color: #000000;
+}
+.doc a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+.doc:hover{
+  border: 1px solid white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
