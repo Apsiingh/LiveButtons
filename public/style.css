@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 700px;
 }
 #activateBtn {
   border: none;
@@ -76,12 +76,18 @@ body {
   cursor: pointer;
   background-color: #000000;
 }
-.doc a{
+.doc a {
   text-decoration: none;
   font-size: 2rem;
   color: white;
 }
-.doc:hover{
+.doc:hover {
   border: 1px solid white;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.inactive {
+  background-color: rgb(100, 100, 100) !important ;
+  color: whitesmoke ;
+  cursor: not-allowed;
 }
