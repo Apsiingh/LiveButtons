@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./image/apple-touch-icon.png" />
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../documentation/image/apple-touch-icon.png" />
     <title>Document LiveButton</title>
-</head>
-<body>
-    <h1>Documentation</h1>
-</body>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <h3 class="name">Akhand Pratap Singh</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2">
+            <li class="nav-item rounded">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="bi bi-house-fill me-2"></i>Task</a
+              >
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="bi bi-house-fill me-2"></i>Document</a
+              >
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link active" href="#"
+                ><i class="bi bi-telephone-fill me-2"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div id="task">
+        <h4>Assignment Task :- Akhand Pratap Singh</h4>
+        <p>
+          Develop a web application without a login page that utilizes a single
+          URL to differentiate between users. Upon accessing the URL, users will
+          encounter an activate button. Once activated, users will be presented
+          with three buttons labeled A, B, and C. Each button will have a
+          distinct color: A (green), B (red), and C (yellow).
+        </p>
+        <p>
+          When a user clicks on any of the buttons (A, B, or C), it becomes
+          inactive for the other user and is highlighted. This behavior should
+          apply even if users open the application in two different browser
+          tabs.
+        </p>
+        <p>
+          The application should maintain this state across both users, ensuring
+          that each user's interaction affects the buttons' statuses
+          independently, regardless of whether they are using the same browser
+          window or different tabs.
+        </p>
+        <p>
+          Please implement the assignment using suitable web development
+          technologies and provide documentation explaining the design choices
+          and implementation details.
+        </p>
+        <p><b>Example scenario:</b></p>
+        <p>
+          Suppose we have two users, User 1 and User 2, accessing the web
+          application from different devices or browser tabs. They both visit
+          the same URL, and they see the same set of buttons: A, B, and C.
+        </p>
+        <div>
+          <b>1.Initial State:</b>
+          <ul>
+            <li>Both users see the "Activate" button.</li>
+            <li>
+              Upon activation, the three buttons (A, B, and C) become enabled
+              for both users.
+            </li>
+          </ul>
+          <b>2.User 1 Interaction:</b>
+          <ul>
+            <li>User 1 clicks on button B.</li>
+            <li>Button B becomes highlighted and inactive for User 1.</li>
+            <li>Button B remains active for User 2.</li>
+          </ul>
+          <b>3.User 2 Interaction:</b>
+          <ul>
+            <li>User 2 clicks on button A.</li>
+            <li>Button A becomes highlighted and inactive for User 2.</li>
+            <li>Button A remains active for User 1.</li>
+          </ul>
+          <b>4.Further Interactions: </b>
+          <ul>
+            <li>User 1 clicks on button C.</li>
+            <li>Button C becomes highlighted and inactive for User 1.</li>
+            <li>Button C remains active for User 2.</li>
+          </ul>
+          <b>5.Real-Time Communication: </b>
+          <ul>
+            <li>
+              Throughout these interactions, User 1 and User 2 receive real-time
+              updates about each other's button clicks. For example, when User 1
+              clicks on button B, User 2 immediately sees button B becoming
+              inactive.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="documentation"></div>
+      <div class="implementation"></div>
+    </div>
+    <div class="bg-dark text-white">
+      <div class="footer">
+        <div class="pdf">
+          <div class="cv"></div>
+          <div class="doc"></div>
+        </div>
+        <div class="social">
+          <div class="linkdin"><a href=""><img src="../documentation/image/icons8-linkedin-188.png" ></a></div>
+          <div class="github"><a href=""><img src="../documentation/image/icons8-github.gif" ></a></div>
+          <div class="mail"><a href=""><img src="../documentation/image/icons8-gmail-logo-188.png" ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
