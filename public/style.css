@@ -64,7 +64,7 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 .doc {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,4 +92,17 @@ body {
   cursor: not-allowed;
   border: none !important;
   box-shadow: none !important;
+}
+.imp{
+  display: flex;
+  margin-bottom: 2rem;
+}
+.imp img{
+   height: 50px;
+   width: 50px;
+}
+.imp p{
+  margin-left: 1rem;
+  color: red;
+  font-weight: 700;
 }
