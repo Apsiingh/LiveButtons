@@ -26,8 +26,19 @@ buttons.forEach((button) => {
 
 // catching the event to inactive the clickButton
 socket.on("buttonClick", (buttonId) => {
-  const button = document.getElementById(buttonId);
-  if (button) {
-    button.classList.add("inactive");
+  document.getElementById(buttonId).classList.add("inactive");
+  // const button = document.getElementById(buttonId);
+  // if (button) {
+  //   button.classList.add("inactive");
+  // }
+});
+
+// catching the event for maintaining the state in all the tab and Windows
+socket.on("btnState", function (buttonState) {
+  for (let buttonId in buttonState) {
+    const button = document.getElementById(buttonId);
+    if (buttonState[buttonId] === false) {
+      button.classList.add("inactive");
+    }
   }
 });
