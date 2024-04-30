@@ -11,7 +11,7 @@ app.use(express.static(__dirname + "/public"));
 let buttonState = { A: true, B: true, C: true };
 
 io.on("connection", function (socket) {
-  console.log("User Connected");
+  // console.log("User Connected");
 
   socket.emit("btnState", buttonState);
 
