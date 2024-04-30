@@ -13,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
     />
     <link rel="icon" href="../documentation/image/apple-touch-icon.png" />
-    <title>Document LiveButton</title>
+    <title>LiveButton Document</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,17 +33,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-md-auto gap-2">
             <li class="nav-item rounded">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#task"
                 ><i class="bi bi-house-fill me-2"></i>Task</a
               >
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#documentation"
                 ><i class="bi bi-house-fill me-2"></i>Document</a
               >
             </li>
             <li class="nav-item rounded">
-              <a class="nav-link active" href="#"
+              <a class="nav-link active" href="#code"
+                ><i class="bi bi-telephone-fill me-2"></i>Code</a
+              >
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link active" href="#social"
                 ><i class="bi bi-telephone-fill me-2"></i>Contact</a
               >
             </li>
@@ -53,7 +61,7 @@
     </nav>
     <div class="main">
       <div id="task">
-        <h4>Assignment Task :- Akhand Pratap Singh</h4>
+        <h4>Assignment Task</h4>
         <p>
           Develop a web application without a login page that utilizes a single
           URL to differentiate between users. Upon accessing the URL, users will
@@ -122,8 +130,104 @@
           </ul>
         </div>
       </div>
-      <div class="documentation"></div>
-      <div class="implementation"></div>
+      <div id="documentation">
+        <h4>Documentation</h4>
+        <p>
+          To implement this web application, I used technologies like HTML, CSS,
+          JavaScript for the frontend, and a backend framework like Node.js with
+          a WebSocket library such as Socket.io for real-time communication
+          between users. Here's a high-level overview of how you can design and
+          implement the application:
+        </p>
+        <ul>
+          <b>1.Frontend:</b>
+          <ul>
+            <h6>Create an HTML page with the following components:</h6>
+            <ul>
+              <li>An "Activate" button initially visible.</li>
+              <li>
+                Three buttons labeled A, B, and C, initially hidden/disabled.
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <h6>Use CSS to style the buttons with distinct colors.</h6>
+          </ul>
+          <ul>
+            <h6>Use JavaScript to handle user interactions:</h6>
+            <ul>
+              <li>
+                Upon clicking the "Activate" button, enable the three buttons
+                (A, B, and C) and hide the "Activate" button.
+              </li>
+              <li>Implement click event listeners for buttons A, B, and C.</li>
+              <li>
+                When a user clicks on a button, send a message to the server
+                indicating which button was clicked.
+              </li>
+            </ul>
+          </ul>
+          <b>2.Backend: </b>
+          <ul>
+            <li>Set up a Node.js server using a framework like Express.js.</li>
+            <li>
+              Integrate Socket.io to handle real-time communication between
+              clients (users).
+            </li>
+            <li>Maintain the state of button clicks for each user.</li>
+            <li>Implement WebSocket event handlers:</li>
+            <ul>
+              <li>
+                When the server receives a message indicating a button click
+                from a user, broadcast this message to all other connected
+                clients.
+              </li>
+              <li>
+                Update the state of buttons for each user based on the received
+                messages.
+              </li>
+            </ul>
+          </ul>
+          <b>3.Real-Time Communication: </b>
+          <ul>
+            <li>
+              Use <b>Socket.io</b> to establish a WebSocket connection between
+              the server and clients.
+            </li>
+            <li>
+              <b>Emit</b> events when a user clicks on a button and broadcast
+              these events to other connected clients.
+            </li>
+            <li>
+              <b>on</b> events where being used for catching the events on the
+              both side .
+            </li>
+          </ul>
+          <b>4.Handling Multiple Tabs:</b>
+          <ul>
+            <li>
+              Implement logic to handle multiple tabs within the same browser or other browser
+              for each user.
+            </li>
+            <li>
+              Ensure that button states are synchronized across all tabs for
+              each user.
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div id="code">
+        <h4>Code</h4>
+        <div class="gifs">
+            <div class="gif">
+              <img src="./image/doc.gif">
+            </div>
+        </div>
+      </div>
+      <div class="copy-container">
+        <p id="text-to-copy">https://github.com/Apsiingh/LiveButtons.git</p>
+        <button type="button" class="btn btn-secondary" id="copy-button">Copy</button>
+      </div>
     </div>
     <div class="bg-dark text-white">
       <div class="footer">
@@ -131,16 +235,30 @@
           <div class="cv"></div>
           <div class="doc"></div>
         </div>
-        <div class="social">
-          <div class="linkdin"><a href=""><img src="../documentation/image/icons8-linkedin-188.png" ></a></div>
-          <div class="github"><a href=""><img src="../documentation/image/icons8-github.gif" ></a></div>
-          <div class="mail"><a href=""><img src="../documentation/image/icons8-gmail-logo-188.png" ></a>
+        <div id="social">
+          <div class="linkdin">
+            <a href="https://www.linkedin.com/in/apsinhg5508/"
+              ><img src="../documentation/image/icons8-linkedin-188.png"
+            /></a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/Apsiingh"
+              ><img src="../documentation/image/icons8-github.gif"
+            /></a>
+          </div>
+          <div class="mail">
+            <a href="mailto:a.p.singh5508@gmail.com" type="email"
+              ><img src="../documentation/image/icons8-gmail-logo-188.png"
+            /></a>
           </div>
         </div>
       </div>
     </div>
+    
   </body>
-
+   <!-- copy -->
+   <script src="./script.js">
+   </script>
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
